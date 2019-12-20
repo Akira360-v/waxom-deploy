@@ -1,0 +1,30 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(content='IE=edge,chrome=1' http-equiv='X-UA-Compatible')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Project
+  meta(name='keywords' content='')
+  meta(name='description' content='')
+  link(rel='shortcut icon' href="${require('images/favicon/favicon.ico')}" type='image/x-icon')
+  link(rel='apple-touch-icon' href="${require('images/favicon/apple-touch-icon.png')}" type='image/png')
+  link(rel='stylesheet' href='css/vendors.css?' + hash)
+  link(rel='stylesheet' href='css/app.css?' + hash)
+  //- стили слайдер
+  //- link(rel='stylesheet' href='css/app.css?' + hash)
+  //- //- link(rel='stylesheet', type='text/css', href='../pages/slick/slick/slick.css')
+  //- link(rel='stylesheet', type='text/css', href="${require('pages/slick/slick-theme.css')}")
+  //- //- link(rel='stylesheet', type='text/css', href='../pages/slickslick/slick-theme.css')
+
+body
+  .wrapper
+    .content
+      main.main
+        block content 
+    include footer/footer
+  
+  script(src='js/vendors.js?' + hash)
+  script(src='js/app.js?' + hash)
+  script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+
+

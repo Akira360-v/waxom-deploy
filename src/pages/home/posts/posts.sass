@@ -1,0 +1,149 @@
+// @media screen and (max-width: 768px)
+.posts__head
+  display: flex
+  flex-direction: column
+  align-items: center
+  & .head__text
+    margin-top: 70px
+    color: #555555
+    font-family: "Raleway - Semi Bold400"
+    font-size: 30px
+    font-weight: 400
+  & .head__descr
+    margin-top: 25px
+    margin-bottom: 40px
+    text-align: center
+    color: #8c8c8c  
+    font-family: Montserrat300
+    font-size: 16px
+    font-weight: 300
+    line-height: 28px
+    max-width: 695px
+
+.list__recent
+  padding: 0 15px
+  &:hover
+    .recent__text
+        background: #362f2d
+        .recent__title
+          color: #c7b299
+          transition: 500ms ease
+    .recent__data
+      & .date__number
+        background-color: #c7b299
+        transition: 500ms ease
+      & .date__month
+        background-color: #a48d72
+        transition: 500ms ease
+    & .slider-two__img
+      & img
+        height: 100%
+        width: 100%
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(0, 0, 0, 0.5)
+        z-index: 1000
+        -webkit-transition: 500ms ease
+        transition: 500ms ease
+        opacity: 0.1
+  & .recent__text
+    background-color: #fff
+    padding: 25px
+    position: relative
+    top: -6px
+
+.recent__data
+  position: absolute
+  top: 5%
+  margin-left: 20px
+  z-index: 1000
+  & .date__number
+    padding: 10px
+    color: #ffffff
+    font-family: Montserrat300
+    font-size: 24px
+    line-height: 20px
+    border-radius: 3px 3px 0 0
+    background-color: #363636
+    transition: 500ms ease
+  & .date__month
+    padding: 7px 10px
+    color: #ffffff
+    font-family: Raleway400
+    font-size: 12px
+    line-height: 20px
+    border-radius: 0 0 3px 3px
+    background-color: #252525
+    text-align: center
+    transition: 500ms ease
+
+.recent__text   
+  & .recent__title
+    color: #555555
+    font-family: Raleway500
+    font-size: 20px
+  & .recent__small
+    font-family: Montserrat300
+    color: #8c8c8c
+    font-size: 14px
+    line-height: 22px
+    margin-bottom: 27px
+  &:hover
+    .recent__small
+      color: #fff
+      transition: 500ms ease
+  & a
+    color: #c7b299
+    font-family: Montserrat300
+    font-size: 14px
+    line-height: 20px
+    text-decoration: none
+  & i
+    color: #c7b299
+    font-size: 12px
+
+.slider-two__img
+  background-size: cover!important
+  background-position: center center
+  height: 220px
+  width: 100%
+  & img
+    height: 100%
+    width: 100%
+  
+.posts
+  padding-bottom: 100px
+
+.posts__slider
+  & .slick-slider
+    & .slick-arrow
+      &:last-child
+        position: absolute
+        bottom: -30px
+        right: 47%
+      &:first-child
+        position: absolute
+        bottom: -30px
+        left: 47%
+
+@media screen and (max-width: 768px)
+  .posts__slider
+    & .slick-slider 
+      & .slick-arrow
+        &:last-child
+          right: 43%
+        &:first-child
+          left: 43%
+@media screen and (max-width: 375px)
+    .posts__slider
+      & .slick-slider
+        & .slick-arrow
+          &:last-child
+            right: 40%
+          &:first-child
+            left: 40%

@@ -1,0 +1,175 @@
+
+
+.projects
+.container
+.projects__waxom
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+.waxom-title 
+  margin-top: 60px
+  color: #555555
+  font-family: "Raleway - Semi Bold400"
+  font-size: 30px
+.waxom-descr 
+  margin-top: 15px
+  color: #8c8c8c
+  font-family: Montserrat300
+  font-size: 16px
+  line-height: 28px
+  max-width: 780px
+.projects-buttons
+  & button
+
+    margin-top: 35px
+.projects__btn
+  color: #8c8c8c
+  font-family: Montserrat300
+  font-size: 14px
+  line-height: 21px
+  background: #fff
+  border: 1px solid #ebebeb
+  border-radius: 3px
+  padding: 7px 20px
+  margin: 0 7px
+  &:hover
+    background: #998675
+    color: #fff
+    border: 1px solid #998675
+    border-radius: 3px
+    padding: 7px 20px
+  
+.projects__botton-dtn
+  border: none
+  // padding: 17px 35px
+  color: #ffffff
+  font-family: "Raleway - Extra Bold400"
+  font-size: 14px
+  line-height: 23px
+  text-transform: uppercase
+.projects__botton
+  display: flex
+  justify-content: center
+.projects-buttons
+  text-align: center
+  padding: 0px 5px
+.blocks-projects ,
+.blocks-project
+  flex-wrap: wrap
+  margin-top: 40px
+.autoplay .blocks-projects
+  display: flex
+  justify-content: space-evenly
+  margin-top: 40px
+.block-projects
+  padding: 0 15px
+  max-width: 100%
+  width: 50%
+  margin-bottom: 30px
+  box-sizing: border-box
+  outline: none
+  &:hover .block-projects__hover
+    display: block
+  &__img
+    position: relative
+    transition: 500ms ease
+    max-height: 220px
+    overflow: hidden
+    & img
+      width: 100%
+      max-height: 220px
+      overflow: hidden
+      transition: 500ms ease
+  &:hover figure:before ,
+  &:hover .slider-two__img:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0,0,0,0.5)
+    z-index: 1000
+    transition: 500ms ease
+  &__text
+    box-sizing: border-box
+    background-color: #fbfaf8
+    padding: 25px
+    transition: 500ms ease
+    margin-top: -2px
+  &:hover .block-projects__text
+      background-color: #362f2d
+      transition: 500ms ease
+  &__title
+    color: #c7b299
+    font-size: 20px
+    font-family: Raleway500
+    margin-bottom: 14px
+    transition: 500ms ease
+  &:hover .block-projects__title
+      color: #fff
+      transition: 500ms ease
+  &__small
+    color: #d1d1d1
+    font-family: Montserrat300
+    font-size: 14px
+    line-height: 20px
+    transition: 500ms ease
+  &:hover .block-projects__small
+    color: #c7b299
+    transition: 500ms ease
+  &__hover 
+    &__link
+      position: absolute
+      top: 50%
+      left: 40%
+      background: url(./link1.svg) center center no-repeat
+      width: 28px
+      height: 28px
+      z-index: 1001
+      transition: 200ms ease
+      &:hover
+        background: url(./link.svg) center center no-repeat
+        transition: 500ms ease
+        width: 30px
+        height: 30px
+        transition: 200ms ease
+    &__lupa
+      position: absolute
+      top: 50%
+      right: 40%
+      background: url(./lupa.svg) center center no-repeat
+      width: 28px
+      height: 28px
+      z-index: 1001
+      transition: 200ms ease
+      &:hover
+        background: url(./lupa1.svg) center center no-repeat
+        transition: 500ms ease
+        width: 30px
+        height: 30px
+        transition: 200ms ease
+.blocks-project .block-projects__img:after
+  content: ''
+  position: absolute
+  width: 30px
+  height: 10px
+  background: url(./arrow.svg) center center no-repeat
+
+  z-index: 1000
+  top: 96%
+  left: 20px
+  right: 0
+  bottom: 0
+  transition: 500ms ease
+.blocks-project .block-projects:hover .block-projects__img:after
+    background: url(./arrowhover.svg) center center no-repeat 
+    transition: 500ms ease
+
+
+.block-projects__img
+  & figure
+    margin: 0
+.dn
+  display: none

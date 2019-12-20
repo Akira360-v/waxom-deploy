@@ -1,0 +1,57 @@
+.phone
+  background-color: #fbfaf8
+  padding: 80px 0 0 0
+  margin-top: -4px
+   
+//   & img
+//     width: 100%
+//     margin-bottom: -4px
+.phone__text
+  padding: 20px
+  & .text__head
+    color: #555555
+    font-family: Raleway500
+    font-size: 30px
+    margin-bottom: 40px
+  & .text__descr
+    color: #8c8c8c
+    font-family: Montserrat300
+    font-size: 16px
+    line-height: 28px
+    margin-bottom: 45px
+  & ul
+    margin-left: 80px
+    & li
+      position: relative
+      color: #8c8c8c
+      font-family: Montserrat300
+      font-size: 16px
+      line-height: 32px
+      & span
+        width: 22px
+        height: 22px
+        position: absolute
+        background: url(./04.svg) center center no-repeat
+        left: -30px
+        top: 3px
+
+        &:hover
+          background: url(./right.svg) center center no-repeat
+
+@media screen and (max-width: 1050px)
+  .phone__text
+    & ul
+      margin-left: 60px
+@media screen and (max-width: 992px)
+
+
+  .phone__text
+    & .text__descr
+      font-size: 15px
+    & ul  
+      margin-left: 30px
+      & li
+        font-size: 13px
+        letter-spacing: -1.2px
+        & span
+          top: 6px

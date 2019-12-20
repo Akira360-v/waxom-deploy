@@ -1,0 +1,70 @@
+.ideas
+  background-color: #fbfaf8
+.ideas__cont
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+.ideas__head
+  padding-top: 70px
+  color: #555555
+  font-family: "Raleway - Semi Bold400"
+  font-size: 30px
+  text-align: center
+.ideas__text
+  margin-top: 20px
+  text-align: center
+  color: #8c8c8c
+  font-family: Montserrat300
+  font-size: 16px
+  line-height: 28px
+  max-width: 700px
+.ideas__img
+  margin-top: 35px
+.ideas__line
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+  position: relative
+  height: 120px
+  align-items: center
+  justify-content: center
+  display: flex
+  top: -10px
+  & .container
+    display: flex
+    align-items: center
+    padding: 0 10px
+    justify-content: space-between
+.container
+.line__head
+.head__title 
+  color: #ffffff
+  font-family: Raleway400
+  font-size: 28px
+  & span
+    color: #c7b299
+.head__descr
+  color: #615855
+  font-family: Montserrat300
+  font-size: 18px
+@media screen and (max-width: 768px)
+  .ideas__line
+    height: 150px
+    & .container
+      flex-direction: column
+  .head__descr
+    margin-bottom: 12px
+    text-align: center
+  .head__title
+    text-align: center
+@media screen and (max-width: 555px)
+  .ideas__head
+    font-size: 24px
+  .ideas__text
+    font-size: 13px
+  .head__title
+    font-size: 20px
+  .head__descr
+    font-size: 14px
+@media screen and (max-width: 425px)
+  .ideas__line
+    height: 170px

@@ -1,0 +1,41 @@
+.counters 
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+  position: relative
+  z-index: 5  
+  top: -7px
+  &-block
+    flex-wrap: wrap
+    justify-content: space-evenly
+    display: flex
+  &_blocks
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 70px 0px 60px 0px
+    width: 145px
+    &:hover .lines
+      width: 20px
+      transition: 250ms ease
+    & i
+      font-size: 40px
+      color: #c7b299
+      margin-bottom: 30px
+      
+    & .blocks__head
+      color: #ffffff
+      font-family: Montserrat400
+      font-size: 48px
+      line-height: 36px
+      margin-bottom: 20px
+    & .blocks__text
+      color: #c7b299
+      font-family: Montserrat300
+      font-size: 14px
+      line-height: 20px
+      text-transform: uppercase
+      margin-bottom: 30px
+    & .lines
+      width: 30px
+      height: 2px
+      background-color: #ffffff
+      transition: 250ms ease

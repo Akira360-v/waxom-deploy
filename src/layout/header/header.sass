@@ -1,0 +1,117 @@
+header
+  margin-top: 40px
+  position: absolute
+  top: -300px
+  z-index: 1000
+.header 
+  align-items: center
+  display: flex
+  padding: 0 30px 
+  justify-content: space-between
+  color: #fff
+.header__logo
+  display: flex
+  align-items: center
+
+.logo__text
+  font-family: Raleway400
+  font-size: 34px
+  letter-spacing: -1.36px
+.header-nav
+  & ul
+    display: flex
+    font-family: Montserrat300
+    font-size: 14px
+    & li
+      margin-left: 30px
+      &:last-child
+        margin-right: 40px
+      & a
+        text-decoration: none
+        color: #fff
+        &:hover
+          color: #c7b299
+
+.header__search
+  display: flex
+
+.search__img
+  &:first-child
+    margin-right: 30px
+  & a
+    & img
+.header-mobil
+  display: none
+//////////////////////////////////////////////////////////////////////
+.header-nav_modil
+
+.bar1, .bar2, .bar3
+  width: 25px
+  height: 2px
+  background-color: #fff
+  margin: 6px 0
+  transition: 0.4s
+
+.change .bar1
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+  transform: rotate(-45deg) translate(-9px, 6px)
+
+.change .bar2
+  opacity: 0
+
+.change .bar3
+  -webkit-transform: rotate(45deg) translate(-8px, -8px)
+  transform: rotate(45deg) translate(-8px, -8px)
+/////////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 1200px)
+  header
+    top: -225px
+  .header-logo
+    width: 100%
+    max-width: 30%
+  .logo__text
+    font-size: 28px
+@media screen and (max-width: 1024px)
+  header
+    top: -190px
+  .header-nav ul li
+    margin-left: 13px
+  .header-nav ul
+    font-size: 12px
+  .logo__text
+    font-size: 20px
+  .search__img:first-child
+    margin-right: 13px
+@media screen and (max-width: 768px)
+  header
+    width: 90%
+  .header
+    display: none
+  .header-mobil
+    display: flex
+  .header-nav_modil
+    display: none
+    position: fixed
+    background: #fff
+    left: 47px
+    top: 20px
+    border-radius: 3px
+    & ul
+      & li
+        & a
+          text-decoration: none
+          color: #000
+          cursor: pointer 
+  .nav_modil
+    position: fixed
+  .header__logo_modil
+    position: absolute
+    left: 44%
+    top: -5px
+
+    & img
+      max-width: 80%
+  .search__img_modil
+    right: 0
+    position: absolute
+  
